@@ -16,21 +16,21 @@
           <a
             class="text-white hover:text-teal-500 text-lg px-4 py-3"
             href="#projects"
-            >Project</a
+            >Pricing & plan</a
           >
         </li>
         <li>
           <a
             class="text-white hover:text-teal-500 text-lg px-4 py-3"
             href="#features"
-            >Features</a
+            >Faq</a
           >
         </li>
         <li>
           <a
             class="text-white hover:text-teal-500 text-lg px-4 py-3"
             href="#testimonials"
-            >Success Stories</a
+            >About Us</a
           >
         </li>
       </ul>

@@ -4,22 +4,22 @@
       <div class="header__bg"></div>
       <div class="container mx-auto relative">
         <Navbar />
-        <div class="flex items-center pt-10 px-5 md:px-0">
+        <div class="flex items-center pt-10 px-5 md:px-8">
           <div class="w-1/2">
             <h1 class="text-4xl text-white mb-5">
-              We helps <u class="hero-underline">startup</u> to <br />
-              getting started & <u class="hero-underline">funding</u> <br />
-              their truly needs
+              Everything <u class="hero-underline">You need</u> to <br />
+              Create <u class="hero-underline">Website</u> <br />
+              Make more online, for less
             </h1>
             <p class="text-white text-xl font-light mb-8">
-              Fund the best idea to become <br />
-              a real product and be the contributor
+              Create the best idea to become <br />
+              Bring your website to life.
             </p>
             <a
               href="#projects"
               class="bg-orange-button hover:bg-green-button text-white font-semibold px-12 py-3 text-xl rounded-full"
             >
-              Find a Project
+              Start for free
             </a>
           </div>
           <div class="w-1/2 flex justify-center">
@@ -28,7 +28,7 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto pt-24" id="features">
+    <section class="container mx-auto pt-24 px-8" id="features">
       <div class="flex justify-between items-center mb-10">
         <div class="w-auto">
           <h2 class="text-3xl text-gray-900 mb-8">
@@ -80,7 +80,7 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto pt-24" id="projects">
+    <section class="container mx-auto pt-24 px-8" id="projects">
       <div class="flex justify-between items-center">
         <div class="w-auto">
           <h2 class="text-3xl text-gray-900 mb-8">
@@ -153,7 +153,7 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto pt-24" id="testimonials">
+    <section class="container mx-auto pt-24 px-8" id="testimonials">
       <div class="flex justify-between items-center">
         <div class="w-auto">
           <h2 class="text-3xl text-gray-900 mb-8">
