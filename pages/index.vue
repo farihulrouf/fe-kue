@@ -50,7 +50,7 @@
           <div class="step-content">
             <h3 class="font-medium">Sign Up</h3>
             <p class="font-light">
-              Sign Up account and start <br />funding project
+              Sign Up account and start <br />
             </p>
           </div>
         </div>
@@ -59,10 +59,9 @@
             <img src="/step-2-illustration.svg" alt="" class="h-30 mb-8" />
           </figure>
           <div class="step-content">
-            <h3 class="font-medium">Open Project</h3>
+            <h3 class="font-medium">Create Your Idea</h3>
             <p class="font-light">
-              Choose some project idea, <br />
-              and start funding
+              Choose your plan <br />
             </p>
           </div>
         </div>
@@ -74,7 +73,7 @@
             <h3 class="font-medium">Execute</h3>
             <p class="font-light">
               Time to makes dream <br />
-              comes true
+              Your Site live
             </p>
           </div>
         </div>
@@ -203,8 +202,8 @@
         </div>
         <div class="w-8/12 mt-16">
           <h2 class="text-3xl text-gray-900 font-light">
-            “Funding at Bucker is very easy and comfortable. <br />
-            Just need to find an idea, click and already funding.”
+            “Man, you guys are awesome. Thanks for the prompt service. <br />
+            I can see that I made the right choice in webhosts..”
           </h2>
           <div class="testimonial-info mt-8">
             <div class="name text-xl font-semibold">Shopie Nicole</div>
