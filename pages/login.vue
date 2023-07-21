@@ -66,7 +66,7 @@
     data() {
       return {
         login: {
-          email: 'julia@bwa.com',
+          email: 'julia@email.com',
           password: 'password',
         },
       }
