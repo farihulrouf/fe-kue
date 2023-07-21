@@ -3,7 +3,7 @@
       <div class="container mx-auto">
         <div class="w-full text-center">
           <h1 class="text-5xl text-white font-semibold">
-            Easy way to funding
+            Watch your ideas come to life.
             <br />
             best idea and innovation
           </h1>

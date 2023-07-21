@@ -5,7 +5,8 @@
           <div class="sm:w-1/2 sm:mt-0 mt-8 h-auto">
             <img src="/logo-footer.svg" alt="" class="mb-3" />
             <p class="font-light">
-              Helps people execute their <br />bright ideas
+              Watch your ideas come to life.
+ <br />bright ideas
             </p>
           </div>
           <div class="sm:w-1/4 h-auto">
@@ -13,8 +14,8 @@
             <ul class="font-light">
               <li class="mb-3">Our Services</li>
               <li class="mb-3">Equity System</li>
-              <li class="mb-3">Refund</li>
-              <li class="mb-3">Shareholder</li>
+              <li class="mb-3">Faq</li>
+              <li class="mb-3">Term & Condition</li>
             </ul>
           </div>
           <div class="sm:w-1/4 h-auto">
@@ -29,10 +30,10 @@
           <div class="sm:w-1/4 h-auto">
             <div class="mb-8 font-bold">Office</div>
             <ul class="font-light">
-              <li class="mb-3">+021 2208 1996</li>
-              <li class="mb-3">KBP, Bandung</li>
-              <li class="mb-3">No.12 (Backer)</li>
-              <li class="mb-3">support@backer.id</li>
+              <li class="mb-3">+031 39410 89</li>
+              <li class="mb-3">Surabaya</li>
+              <li class="mb-3">No.12 (Your Company)</li>
+              <li class="mb-3">support@company.id</li>
             </ul>
           </div>
         </div>
