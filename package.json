@@ -22,8 +22,13 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.3.3",
+    "css-loader": "^6.8.1",
     "eslint-config-prettier": "^8.5.0",
     "postcss": "^8.4.17",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "sass": "^1.64.0",
+    "sass-loader": "^10.0.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2"
   }
 }
