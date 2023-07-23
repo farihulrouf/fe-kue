@@ -1,6 +1,6 @@
 <template>
   <div class="landing-page">
-    <section class="landing-hero pt-5">
+    <section class="landing-hero pt-5 px-6">
       <div class="header__bg"></div>
       <div class="container mx-auto relative">
         <Navbar />

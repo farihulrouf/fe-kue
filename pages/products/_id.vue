@@ -1,6 +1,6 @@
 <template>
   <div class="project-page">
-    <section class="project-header pt-5">
+    <section class="project-header pt-5 px-6">
       <div class="container mx-auto relative">
         <Navbar />
       </div>
@@ -9,28 +9,27 @@
       <div class="flex mt-3">
         <div class="w-3/4 mr-6 flex-col flex justify-center items-center">
           <h2 class="text-2xl text-white mb-8">{{ product.data.name }}</h2>
-          
-          <h2 class="text-md text-white">Pilih Siklus {{ picked }}</h2>
-          <div class="flex gap-4 text-white mt-4 mb-4">
-              <div class="text-white p-4 bg-teal-500 rounded-xl">
+           <div class="flex gap-4 text-white mt-4 mb-4">
+              <div class="text-white p-4 px-6 bg-teal-500 rounded-xl">
                 <!--  <div id="{{ val }}">, use <div :id="val">. -->
                   <input type="radio" id="one" v-bind:value=product.data.pricetwo*12  v-model="picked" />
-                  <label for="one">1 tahun</label>
-                  <p class="text-lg">Rp {{ product.data.pricetwo }}</p>
+                  <label class="text-2xl" for="one">1 tahun</label>
+                  <p class="text-2xl">Rp {{ product.data.pricetwo }}</p>
                   <p class="text-[11px] text-center">Month</p>
               </div>
-              <div class="text-white p-4 bg-teal-500 rounded-xl">
+              <div class="text-white p-4 px-6 bg-teal-500 rounded-xl">
                   <input type="radio" id="two" v-bind:value=product.data.pricetree*24 v-model="picked" />
-                  <label for="two">2 tahun</label>
-                  <p class="text-lg">Rp {{  product.data.pricetree }}</p>
+                  <label for="two" class="text-2xl">2 tahun</label>
+                  <p class="text-2xl">Rp {{  product.data.pricetree }}</p>
                   <p class="text-[11px] text-center">Month</p>
               </div>
-              <div class="text-white p-4 bg-teal-500 rounded-xl">
+              <div class="text-white p-4 px-6 bg-teal-500 rounded-xl">
                   <input type="radio" id="month" v-bind:value=product.data.price v-model="picked" />
-                  <label for="month">1 bulan</label>
-                  <p class="text-lg">Rp {{  product.data.price }}</p>
+                  <label class="text-2xl" for="month">1 bulan</label>
+                  <p class="text-2xl">Rp {{  product.data.price }}</p>
                   <p class="text-[11px] text-center">Month</p>
               </div>
+              
           </div>
           
         </div>
@@ -68,6 +67,8 @@
               </li>
             </ul>
             <template v-if="this.$store.state.auth.loggedIn">
+             
+              
               <input
                 type="number"
                 class="border border-gray-500 block w-full px-6 py-3 mt-4 rounded-full text-gray-800 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline"
@@ -76,6 +77,9 @@
                 v-model.number="transaction.amount"
                 @keyup.enter="fund"
               />
+              
+              <label>{{ transaction.amount = picked }}</label>
+
               <button
                 @click="fund"
                 class="mt-3 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-medium px-6 py-3 text-md rounded-full"
@@ -102,6 +106,7 @@
           <p class="text-gray-400">Nama Domain</p>
           <input type="text" placeholder="nama domain" class="border p-2 w-72 rounded-lg px-6" />
         </div>
+        <h2 class="text-3xl text-black mt-6">{{ picked }}</h2>
       </div>
     </section>
     <div class="cta-clip -mt-20"></div>
@@ -129,6 +134,17 @@ export default {
     }
   },
   methods: {
+    /*
+    axios({
+  method: 'post',
+  url: '/user/1',
+  data: {
+    firstName: 'Renat',
+    lastName: 'Galyamov'
+  }
+})
+*/
+  
     async fund() {
       try {
         let response = await this.$axios.$post(
