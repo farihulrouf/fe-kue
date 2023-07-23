@@ -9,22 +9,24 @@
       <div class="flex mt-3">
         <div class="w-3/4 mr-6 flex-col flex justify-center items-center">
           <h2 class="text-2xl text-white mb-8">{{ product.data.name }}</h2>
-          <h2 class="text-md text-white">Pilih Siklus</h2>
+          
+          <h2 class="text-md text-white">Pilih Siklus {{ picked }}</h2>
           <div class="flex gap-4 text-white mt-4 mb-4">
               <div class="text-white p-4 bg-teal-500 rounded-xl">
-                  <input type="radio" id="one" value="One" v-model="picked" />
+                <!--  <div id="{{ val }}">, use <div :id="val">. -->
+                  <input type="radio" id="one" v-bind:value=product.data.pricetwo*12  v-model="picked" />
                   <label for="one">1 tahun</label>
                   <p class="text-lg">Rp {{ product.data.pricetwo }}</p>
                   <p class="text-[11px] text-center">Month</p>
               </div>
               <div class="text-white p-4 bg-teal-500 rounded-xl">
-                  <input type="radio" id="two" value="Two" v-model="picked" />
+                  <input type="radio" id="two" v-bind:value=product.data.pricetree*24 v-model="picked" />
                   <label for="two">2 tahun</label>
                   <p class="text-lg">Rp {{  product.data.pricetree }}</p>
                   <p class="text-[11px] text-center">Month</p>
               </div>
               <div class="text-white p-4 bg-teal-500 rounded-xl">
-                  <input type="radio" id="month" value="month" v-model="picked" />
+                  <input type="radio" id="month" v-bind:value=product.data.price v-model="picked" />
                   <label for="month">1 bulan</label>
                   <p class="text-lg">Rp {{  product.data.price }}</p>
                   <p class="text-[11px] text-center">Month</p>
@@ -100,14 +102,6 @@
           <p class="text-gray-400">Nama Domain</p>
           <input type="text" placeholder="nama domain" class="border p-2 w-72 rounded-lg px-6" />
         </div>
-        <div class="flex gap-2 mt-2 mb-2">
-          <p class="text-md">Addons</p>
-          <div>
-            <input type="checkbox" id="checkbox" v-model="checked" />
-            <label for="checkbox">{{ checked }}</label>
-          </div>
-
-        </div>
       </div>
     </section>
     <div class="cta-clip -mt-20"></div>
@@ -125,7 +119,7 @@ export default {
   },
   data() {
     return {
-      picked: 'One',
+      picked: 'one',
       checked: true,
       default_image: '',
       transaction: {
