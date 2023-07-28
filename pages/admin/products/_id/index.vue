@@ -5,7 +5,7 @@
           <Navbar />
         </div>
       </section>
-      <section class="container mx-auto pt-8">
+      <section class="container mx-auto pt-8 px-6">
         <div class="flex justify-between items-center">
           <div class="w-full mr-6">
             <h2 class="text-4xl text-gray-900 mb-2 font-medium">Dashboard</h2>
@@ -30,7 +30,7 @@
         <div class="block mb-2">
           <div class="w-full lg:max-w-full lg:flex mb-4">
             <div
-              class="border border-gray-400 bg-white rounded p-8 flex flex-col justify-between leading-normal"
+              class="w-full border border-gray-400 bg-white rounded p-8 flex flex-col justify-between leading-normal"
             >
               <div>
                 <div class="text-gray-900 font-bold text-xl mb-2">
@@ -65,6 +65,8 @@
             </div>
           </div>
         </div>
+
+        <!--
         <div class="flex justify-between items-center">
           <div class="w-2/4 mr-6">
             <h3 class="text-2xl text-gray-900 mb-4 mt-5">Gallery</h3>
@@ -84,6 +86,7 @@
             </button>
           </div>
         </div>
+        -->
         <div class="grid grid-cols-4 gap-4 -mx-2">
           <div
             class="relative w-full bg-white m-2 p-2 border border-gray-400 rounded"

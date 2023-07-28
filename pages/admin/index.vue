@@ -5,7 +5,7 @@
         <Navbar />
       </div>
     </section>
-    <section class="container mx-auto pt-8">
+    <section class="container mx-auto pt-8 px-6">
       <div class="flex justify-between items-center mb-6">
         <div class="w-3/4 mr-6">
           <h2 class="text-4xl text-gray-900 mb-2 font-medium">Dashboard</h2>
@@ -18,7 +18,7 @@
                 class="text-gray-500 hover:text-gray-800"
                 to="/dashboard/transactions"
               >
-                Your Transactions
+                 Transactions
               </nuxt-link>
             </li>
           </ul>
@@ -39,27 +39,18 @@
           v-for="product in products.data"
           :key="product.id"
         >
-          <div
-            class="border h-48 lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-            :style="
-              'background-color: #bbb; background-position: center; background-image: url(\'' +
-              $axios.defaults.baseURL +
-              '/' +
-              product.image_url +
-              '\')'
-            "
-          ></div>
+         
           <nuxt-link
             :to="'/admin/products/' + product.id"
-            class="w-full border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-8 flex flex-col justify-between leading-normal"
+            class="w-full border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-8 flex justify-between leading-normal"
           >
             <div class="mb-8">
               <div class="text-gray-900 font-bold text-xl mb-1">
                 {{ product.name }}
               </div>
-              <p class="text-sm text-gray-600 flex items-center mb-2">
+              <p class="text-2xl text-gray-600 flex items-center mb-2">
                 Rp.
-                {{ new Intl.NumberFormat().format(product.price) }}
+                {{ new Intl.NumberFormat().format(product.price) }} / month
               </p>
               <p class="text-gray-700 text-base">
                 {{ product.short_description }}

@@ -5,7 +5,7 @@
           <Navbar />
         </div>
       </section>
-      <section class="container mx-auto pt-8">
+      <section class="container mx-auto pt-8 px-6">
         <div class="flex justify-between items-center">
           <div class="w-full mr-6">
             <h2 class="text-4xl text-gray-900 mb-2 font-medium">Dashboard</h2>
@@ -155,7 +155,7 @@
               price: this.product.data.price,
               discount: this.product.data.discount,
               discountwo: this.product.data.discountwo,
-              perks: this.product.data.perks.join(),
+              perks: this.product.data.perks,
             }
           )
           console.log(response)
