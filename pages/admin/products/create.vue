@@ -40,7 +40,7 @@
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="text"
-                      placeholder="Contoh: Demi Gunpla Demi Istri"
+                      placeholder="Contoh: Hosting Pro"
                       v-model="product.name"
                     />
                   </div>
@@ -57,6 +57,34 @@
                       v-model.number="product.price"
                     />
                   </div>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label
+                      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    >
+                      Discount 
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      type="number"
+                      placeholder="Contoh: 10"
+                      v-model.number="product.discount"
+                    />
+                  </div>
+
+                  <div class="w-full md:w-1/2 px-3">
+                    <label
+                      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    >
+                      Discount Two
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      type="number"
+                      placeholder="Contoh: 10"
+                      v-model.number="product.discountwo"
+                    />
+                  </div>
+
                   <div class="w-full px-3">
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-3"
@@ -66,7 +94,7 @@
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="text"
-                      placeholder="Deskripsi singkat mengenai projectmu"
+                      placeholder="Deskripsi singkat mengenai product"
                       v-model="product.short_description"
                     />
                   </div>
@@ -74,12 +102,12 @@
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     >
-                      What will backers get
+                      What Fetures Hosting
                     </label>
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="text"
-                      placeholder="Contoh: Ayam, Nasi Goreng, Piring"
+                      placeholder="Example: Free Domain .com, 30Gb SSD , Unlimited websites"
                       v-model="product.perks"
                     />
                   </div>
@@ -92,7 +120,7 @@
                     <textarea
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="text"
-                      placeholder="Isi deskripsi panjang untuk projectmu"
+                      placeholder="description your products"
                       v-model="product.description"
                     ></textarea>
                   </div>

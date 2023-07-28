@@ -59,6 +59,32 @@
                       v-model.number="product.data.price"
                     />
                   </div>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label
+                      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    >
+                      Discount
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      type="number"
+                      placeholder="Contoh: 10%"
+                      v-model.number="product.data.discount"
+                    />
+                  </div>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label
+                      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    >
+                      Discount Two
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      type="number"
+                      placeholder="Contoh: 10%"
+                      v-model.number="product.data.discountwo"
+                    />
+                  </div>
                   <div class="w-full px-3">
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-3"
@@ -127,6 +153,8 @@
               short_description: this.product.data.short_description,
               description: this.product.data.description,
               price: this.product.data.price,
+              discount: this.product.data.discount,
+              discountwo: this.product.data.discountwo,
               perks: this.product.data.perks.join(),
             }
           )

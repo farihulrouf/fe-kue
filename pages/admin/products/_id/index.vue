@@ -53,12 +53,14 @@
                     {{ perk }}
                   </li>
                 </ul>
+                <!--
                 <p class="text-sm font-bold flex items-center mb-1 mt-4">
                   Goal Amount
                 </p>
                 <p class="text-4xl text-gray-700 text-base">
                   {{ new Intl.NumberFormat().format(product.data.price) }}
                 </p>
+                -->
               </div>
             </div>
           </div>
@@ -115,11 +117,13 @@
                 <div class="text-gray-900 font-bold text-xl mb-1">
                   {{ transaction.name }}
                 </div>
+                <!--
                 <p class="text-sm text-gray-600 flex items-center mb-2">
                   Rp.
                   {{ new Intl.NumberFormat().format(transaction.amount) }}
                   &middot; {{ transaction.created_at }}
                 </p>
+              -->
               </div>
             </div>
           </div>
