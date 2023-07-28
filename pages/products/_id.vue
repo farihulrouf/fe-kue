@@ -8,25 +8,25 @@
     <section class="container project-container mx-auto -mt-56 px-6">
       <div class="flex mt-3">
         <div class="w-3/4 mr-6 flex-col flex justify-center items-center">
-          <h2 class="text-2xl text-white mb-8">{{ product.data.name }}</h2>
+           <h2 class="text-3xl text-white mb-8 ">Paket Hosting: {{ product.data.name }}</h2>
            <div class="flex gap-4 text-white mt-4 mb-4">
               <div class="text-white p-4 px-6 bg-teal-500 rounded-xl">
                 <!--  <div id="{{ val }}">, use <div :id="val">. -->
                   <input type="radio" id="one" v-bind:value=product.data.pricetwo*12  v-model="picked" />
-                  <label class="text-2xl" for="one">1 tahun</label>
-                  <p class="text-2xl">Rp {{ product.data.pricetwo }}</p>
+                  <label class="text-2xl" for="one">1 year</label>
+                  <p class="text-2xl">Rp {{ product.data.pricetwo.toLocaleString() }}</p>
                   <p class="text-[11px] text-center">Month</p>
               </div>
               <div class="text-white p-4 px-6 bg-teal-500 rounded-xl">
                   <input type="radio" id="two" v-bind:value=product.data.pricetree*24 v-model="picked" />
-                  <label for="two" class="text-2xl">2 tahun</label>
-                  <p class="text-2xl">Rp {{  product.data.pricetree }}</p>
+                  <label for="two" class="text-2xl">2 years</label>
+                  <p class="text-2xl">Rp {{  product.data.pricetree.toLocaleString() }}</p>
                   <p class="text-[11px] text-center">Month</p>
               </div>
               <div class="text-white p-4 px-6 bg-teal-500 rounded-xl">
                   <input type="radio" id="month" v-bind:value=product.data.price v-model="picked" />
                   <label class="text-2xl" for="month">1 bulan</label>
-                  <p class="text-2xl">Rp {{  product.data.price }}</p>
+                  <p class="text-2xl">Rp {{  product.data.price.toLocaleString() }}</p>
                   <p class="text-[11px] text-center">Month</p>
               </div>
               
@@ -68,7 +68,7 @@
             </ul>
             <template v-if="this.$store.state.auth.loggedIn">
              
-              
+
               <input
                 type="number"
                 class="border border-gray-500 block w-full px-6 py-3 mt-4 rounded-full text-gray-800 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline"
@@ -78,7 +78,6 @@
                 @keyup.enter="fund"
               />
               
-              <label>{{ transaction.amount = picked }}</label>
 
               <button
                 @click="fund"
@@ -100,13 +99,17 @@
       </div>
     </section>
 
-    <section class="w-3/4 px-6 -mt-10 flex justify-center items-center">
+    <section class="w-3/4 px-6 -mt-20 flex justify-center items-center">
       <div class="flex flex-col justify-center w-1/2">
-        <div class="flex items-center gap-2">
-          <p class="text-gray-400">Nama Domain</p>
-          <input type="text" placeholder="nama domain" class="border p-2 w-72 rounded-lg px-6" />
+        <div class="flex items-center gap-2 mt-4 mb-4">
+          <input type="text" placeholder="Type name domain" class="border p-2 w-full rounded-lg px-6" />
         </div>
-        <h2 class="text-3xl text-black mt-6">{{ picked }}</h2>
+
+        <div class="mt-4 mb-4 border p-4">
+          {{ product.data.short_description }}
+        </div>
+
+        <h2 class="text-3xl text-black mt-6">Total Bayar Rp {{ transaction.amount = picked }}</h2>
       </div>
     </section>
     <div class="cta-clip -mt-20"></div>

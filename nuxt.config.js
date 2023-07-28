@@ -52,9 +52,7 @@ export default {
 
   
 
-  generate: {
-    dir: 'my-site'
-  },
+  
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
