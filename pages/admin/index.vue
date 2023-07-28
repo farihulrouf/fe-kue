@@ -50,7 +50,7 @@
             "
           ></div>
           <nuxt-link
-            :to="'/dashboard/projects/' + product.id"
+            :to="'/admin/products/' + product.id"
             class="w-full border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-8 flex flex-col justify-between leading-normal"
           >
             <div class="mb-8">
@@ -59,9 +59,7 @@
               </div>
               <p class="text-sm text-gray-600 flex items-center mb-2">
                 Rp.
-                {{ new Intl.NumberFormat().format(product.goal_amount) }}
-                &middot;
-                {{ (product.current_amount / product.goal_amount) * 100 }}%
+                {{ new Intl.NumberFormat().format(product.price) }}
               </p>
               <p class="text-gray-700 text-base">
                 {{ product.short_description }}

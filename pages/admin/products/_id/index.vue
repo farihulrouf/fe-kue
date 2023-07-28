@@ -1,5 +1,5 @@
 <template>
-    <div class="project-page">
+    <div class="product-page">
       <section class="dashboard-header pt-5">
         <div class="container mx-auto relative">
           <Navbar />
@@ -18,7 +18,7 @@
           <div class="w-1/4 text-right">
             <nuxt-link
               :to="{
-                name: 'dashboard-projects-id-edit',
+                name: 'admin-products-id-edit',
                 params: { id: product.data.id },
               }"
               class="bg-green-button hover:bg-green-button text-white font-bold px-4 py-1 rounded inline-flex items-center"
@@ -57,7 +57,7 @@
                   Goal Amount
                 </p>
                 <p class="text-4xl text-gray-700 text-base">
-                  {{ new Intl.NumberFormat().format(product.data.goal_amount) }}
+                  {{ new Intl.NumberFormat().format(product.data.price) }}
                 </p>
               </div>
             </div>
