@@ -54,7 +54,7 @@
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="number"
                       placeholder="Contoh: 200000"
-                      v-model.number="product.goal_amount"
+                      v-model.number="product.price"
                     />
                   </div>
                   <div class="w-full px-3">
@@ -117,7 +117,7 @@
           name: '',
           short_description: '',
           description: '',
-          goal_amount: 0,
+          price: 0,
           perks: '',
         },
       }
