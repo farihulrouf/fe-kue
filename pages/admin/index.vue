@@ -16,7 +16,7 @@
             <li class="mr-6">
               <nuxt-link
                 class="text-gray-500 hover:text-gray-800"
-                to="/dashboard/transactions"
+                to="/admin/transactions"
               >
                  Transactions
               </nuxt-link>

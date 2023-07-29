@@ -36,6 +36,9 @@
                 <div class="text-gray-900 font-bold text-xl mb-2">
                   {{ product.data.name }}
                 </div>
+                <p class="text-gray-700 text-xl py-4">
+                  {{ product.data.price }} / month
+                </p>
                 <p class="text-gray-700 text-base">
                   {{ product.data.short_description }}
                 </p>
@@ -46,7 +49,7 @@
                   {{ product.data.description }}
                 </p>
                 <p class="text-sm font-bold flex items-center mb-1 mt-4">
-                  What Will Funders Get
+                  What Will Get
                 </p>
                 <ul class="list-disc ml-5">
                   <li v-for="perk in product.data.perks" :key="perk">
@@ -120,13 +123,13 @@
                 <div class="text-gray-900 font-bold text-xl mb-1">
                   {{ transaction.name }}
                 </div>
-                <!--
+                
                 <p class="text-sm text-gray-600 flex items-center mb-2">
                   Rp.
                   {{ new Intl.NumberFormat().format(transaction.amount) }}
                   &middot; {{ transaction.created_at }}
                 </p>
-              -->
+              
               </div>
             </div>
           </div>
