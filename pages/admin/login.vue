@@ -77,6 +77,8 @@
           let response = await this.$auth.loginWith('local', { data: this.login })
           this.$auth.setUser(response.data.data)
           console.log(response)
+          this.$router.push({ path: '/admin' })
+
         } catch (err) {
           console.log(err)
         }

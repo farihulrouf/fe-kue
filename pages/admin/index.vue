@@ -62,6 +62,7 @@
               </button>
             </div>
           </nuxt-link>
+          
         </div>
       </div>
     </section>
@@ -72,14 +73,25 @@
 </template>
 
 <script>
+import jwt_decode from "jwt-decode";
+
 export default {
+  
+  mounted() {
+    console.log(this.$store.state.auth.user.role)
+    if(this.$store.state.auth.user.role!='admin'){
+      this.$router.push({ path: '/admin/login' })
+    }
+
+  },
   middleware: 'auth',
   async asyncData({ $axios, app }) {
     const products = await $axios.$get(
-      '/api/v1/products?user_id=' + app.$auth.user.id
+      '/api/v1/products'
     )
     return { products }
   },
+
 }
 </script>
 

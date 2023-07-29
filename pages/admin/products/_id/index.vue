@@ -16,6 +16,7 @@
             <h3 class="text-2xl text-gray-900 mb-4">product Details</h3>
           </div>
           <div class="w-1/4 text-right">
+
             <nuxt-link
               :to="{
                 name: 'admin-products-id-edit',
@@ -149,6 +150,7 @@
       const transactions = await $axios.$get(
         '/api/v1/products/' + params.id + '/transactions'
       )
+      console.log("test data",product)
       return { product, transactions }
     },
     data() {

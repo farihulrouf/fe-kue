@@ -159,9 +159,12 @@
             }
           )
           console.log(response)
+          this.$router.push({ path: '/admin' })
+
         } catch (err) {
           console.log(err)
         }
+        
       },
       changeImage(url) {
         this.default_image = url
