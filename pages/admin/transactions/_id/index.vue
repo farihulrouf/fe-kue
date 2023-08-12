@@ -43,8 +43,11 @@
             >
               <div>
                 <div class="text-gray-900 font-bold text-xl mb-2">
-                   Rp {{ transactions.data.amount }}
+                   Rp {{ new Intl.NumberFormat().format(transactions.data.amount) }}
+
                 </div>
+
+                
                 <button class="text-gray-700 bg-yellow-400 px-4 py-1">
                     {{ transactions.data.status }}
                 </button>
