@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@ag-grid-community/core@^30.0.6":
+  version "30.0.6"
+  resolved "https://registry.yarnpkg.com/@ag-grid-community/core/-/core-30.0.6.tgz#ae6c9ffec73d983f000719c30ab0ca080242c89c"
+  integrity sha512-NRVKlLfQK/A0k78rg46z2CsiyKHrZr9TQP9CGalFc1rPk97YYesO0zxy59KYTzoZhxo/E0M16aW4gpS3SBD90A==
+
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
