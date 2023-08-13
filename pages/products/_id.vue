@@ -2,7 +2,7 @@
   <div class="project-page">
     <section class="project-header pt-5 px-6">
       <div class="container mx-auto relative">
-        <Navbar />
+        <Nav />
       </div>
     </section>
     <section class="container project-container mx-auto -mt-56 px-6">
