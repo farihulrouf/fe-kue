@@ -3,7 +3,7 @@
     <section class="landing-hero pt-5 px-6">
       <div class="header__bg"></div>
       <div class="container mx-auto relative">
-        <Navbar />
+        
         <div class="flex items-center pt-10 px-5 md:px-8">
           <div class="w-1/2">
             <h1 class="text-4xl text-white mb-5">
@@ -233,6 +233,8 @@
     </section>
     <div class="cta-clip -mt-20"></div>
     <CallToAction />
+    <Navbar />
+
     <Footer />
   </div>
 </template>
