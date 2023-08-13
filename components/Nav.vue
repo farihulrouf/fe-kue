@@ -23,7 +23,7 @@
           <a
             class="text-white hover:text-teal-500 text-lg px-4 py-3"
             href="#features"
-            >Faq</a
+            >Faqs</a
           >
         </li>
         <li>
@@ -55,7 +55,7 @@
           </nuxt-link>
         </li>
       </ul>
-      <!--
+      
       <div class="flex ml-auto" v-else>
         <div class="dropdown inline-block relative z-10">
           <button
@@ -109,7 +109,7 @@
           </ul>
         </div>
       </div>
-    -->
+    
     </header>
   </template>
   
