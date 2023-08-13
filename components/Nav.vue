@@ -30,7 +30,7 @@
           <a
             class="text-white hover:text-teal-500 text-lg px-4 py-3"
             href="#testimonials"
-            >About Us</a
+            >About Me</a
           >
         </li>
       </ul>
