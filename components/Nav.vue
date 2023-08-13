@@ -9,14 +9,14 @@
             class="text-white hover:text-teal-500 text-lg px-4 py-3"
             to="/"
           >
-            Home
+            Homes
           </nuxt-link>
         </li>
         <li>
           <a
             class="text-white hover:text-teal-500 text-lg px-4 py-3"
             href="#projects"
-            >Pricing & plan</a
+            >Pricing & plans</a
           >
         </li>
         <li>
