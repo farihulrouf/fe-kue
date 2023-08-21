@@ -6,29 +6,41 @@
         <Nav />
         <div class="flex items-center pt-10 px-5 md:px-8">
           <div class="w-1/2">
-            <h1 class="text-4xl text-white mb-5">
-              Everything <u class="hero-underline">You need</u> to <br />
-              Create <u class="hero-underline">Website</u> <br />
-              Make more online, for less
+            <h1 class="text-5xl text-white mb-5">
+              Ada <u class="hero-underline">Acara</u> <br />
+              Ada <u class="hero-underline">Larissa</u> <br />
             </h1>
             <p class="text-white text-xl font-light mb-8">
-              Create the best idea to become <br />
-              Bring your website to life.
+              Lifestyle Bakery Dengan Varian Produk Terbanyak dan Jaminan<br />
+              Kualitas Produk & Layanan.
             </p>
             <a
               href="#projects"
               class="bg-orange-button hover:bg-green-button text-white font-semibold px-12 py-3 text-xl rounded-full"
             >
-              Start for free
+              Produk larissa
             </a>
           </div>
           <div class="w-1/2 flex justify-center">
-            <img src="/hero-image@2x.png" alt="crowdfunding project" />
+            <img src="/banner-laritta.png" alt="crowdfunding project" />
           </div>
         </div>
       </div>
     </section>
-    <section class="container mx-auto pt-24 px-8" id="features">
+    <section class="container mx-auto pt-24 px-8 mt-8" id="features">
+      <div class="w-full flex gap-2">
+        <div class="w-1/3 bg-teal-500">
+          <img src="donat-laritta.png" class="w-full" alt="promo" />
+        </div>
+        <div class="w-2/3 bg-orange-600">
+          <img src="donat_larissa.png" class="w-full" alt="promo" />
+          <div class="w-full flex">
+            <img src="outlet-laritta.webp" alt="outleet" />
+            <img src="promo.png" alt="outleet" />
+          </div>
+        </div>
+      </div>
+      <!--
       <div class="flex justify-between items-center mb-10">
         <div class="w-auto">
           <h2 class="text-3xl text-gray-900 mb-8">
@@ -78,12 +90,14 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="container mx-auto pt-24 px-8" id="projects">
+    --></section>
+
+    <section class="container mx-auto pt-24" id="projects">
       <div class="flex justify-between items-center">
         <div class="w-auto">
           <h2 class="text-3xl text-gray-900 mb-8">
-            Bring your website to life
+            New projects you can <br />
+            taken care of
           </h2>
         </div>
         <div class="w-auto mt-5">
@@ -96,96 +110,31 @@
         <div
           v-for="product in products.data"
           :key="product.id"
-          class="w-full rounded-20"
+          class="card-project w-full p-5 rounded-20"
         >
-        <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white hover:bg-indigo-700 hover:text-white">
-                <h3 class="mb-4 text-2xl font-semibold"> {{ product.name }}</h3>
-                <div class="flex justify-center items-baseline my-8">
-                    <span class="mr-2 text-3xl font-extrabold">Rp {{ product.price.toLocaleString() }}</span>
-                    <span class="text-gray-500 dark:text-gray-400">/month</span>
-                </div>
-                
-                <!-- List -->
-                <ul role="list" class="mb-8 space-y-4 text-left">
-                    <li v-for="perk in product.perks" :key="perk" class="flex items-center space-x-3">
-                        <!-- Icon -->
-                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                        <span>{{ perk }}</span>
-                    </li>
-                </ul>
-            
-                <button
-                @click="
-                $router.push({
-                  name: 'products-id',
-                  params: { id: product.id },
-                })
-              "
-                    class="text-white bg-orange-button hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900 hover:bg-white hover:text-black">
-                    Get started
-                </button>
+          <img
+            :src="$axios.defaults.baseURL + '/' + product.image_url"
+            alt=""
+            class="rounded-xl w-full h-[300px]"
+          />
+
+          <div class="flex justify-between items-center">
+            <div>
+              <h1 class="mt-5 text-2xl font-semibold">{{ product.name }}</h1>
+              <p class="mt-2">Rp {{ product.price.toLocaleString() }}</p>
             </div>
-          </div>
-        <!--
-        <div
-          v-for="product in products.data"
-          :key="product.id"
-          class="card-project w-full p-5 border border-gray-500 rounded-20"
-        >
-          <div class="item">
-            <figure class="item-image">
-              <img
-                :src="$axios.defaults.baseURL + '/' + product.image_url"
-                alt=""
-                class="rounded-20 w-full"
-              />
-            </figure>
-            <div class="item-meta">
-              <h4 class="text-3xl font-medium text-gray-900 mt-5">
-                {{ product.name }}
-              </h4>
-              <p class="text-md font-light text-gray-900 h-12">
-                {{ product.short_description }}
-              </p>
-              <div class="relative pt-4 progress-bar">
-                <div
-                  class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200 h-3 rounded-lg"
-                >
-                  <div
-                    :style="
-                      'width: ' +
-                      (product.current_amount / product.goal_amount) * 100 +
-                      '%'
-                    "
-                    class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-progress progress-striped"
-                  ></div>
-                </div>
-              </div>
-              <div class="flex progress-info">
-                <div>
-                  {{ (product.current_amount / product.goal_amount) * 100 }}%
-                </div>
-                <div class="ml-auto font-semibold">
-                  Rp {{ new Intl.NumberFormat().format(product.goal_amount) }}
-                </div>
-              </div>
+            <div>
+              <button
+                class="text-white text-md font-semibold bg-pink-600 py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+              >
+                Buy Now
+              </button>
             </div>
-            <button
-              @click="
-                $router.push({
-                  name: 'projects-id',
-                  params: { id: product.id },
-                })
-              "
-              class="mt-5 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-2 text-lg rounded-full"
-            >
-              Fund Now
-            </button>
           </div>
         </div>
-      -->
       </div>
     </section>
+
     <section class="container mx-auto pt-24 px-8" id="testimonials">
       <div class="flex justify-between items-center">
         <div class="w-auto">
@@ -259,7 +208,7 @@ export default {
   background-image: url('/auth-background.svg');
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: #3b41e3;
+  background-color: #f11574;
   transform: skewY(-6deg);
   transform-origin: top left;
 }
