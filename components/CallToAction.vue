@@ -1,20 +1,19 @@
 <template>
-    <section class="call-to-action bg-purple-progress pt-64 pb-10">
-      <div class="container mx-auto">
-        <div class="w-full text-center">
-          <h1 class="text-5xl text-white font-semibold">
-            Watch your ideas come to life.
-            <br />
-            best idea and innovation
-          </h1>
-          <button
-            @click="$router.push({ path: '/register' })"
-            class="inline-block bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-4 mt-8 text-lg rounded-full"
-          >
-            Getting Started
-          </button>
-        </div>
+  <section class="call-to-action bg-[#ee3123] pt-64 pb-10">
+    <div class="container mx-auto">
+      <div class="w-full text-center">
+        <h1 class="text-5xl text-white font-semibold">
+          Ada Acara dan pesta.
+          <br />
+          Ada Larissa
+        </h1>
+        <button
+          @click="$router.push({ path: '/register' })"
+          class="inline-block bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-4 mt-8 text-lg rounded-full"
+        >
+          Order Sekarang
+        </button>
       </div>
-    </section>
-  </template>
-  
+    </div>
+  </section>
+</template>

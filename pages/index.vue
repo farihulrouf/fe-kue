@@ -40,7 +40,7 @@
           </div>
         </div>
       </div>
-      <!--
+
       <div class="flex justify-between items-center mb-10">
         <div class="w-auto">
           <h2 class="text-3xl text-gray-900 mb-8">
@@ -49,56 +49,119 @@
           </h2>
         </div>
       </div>
-      <div class="flex">
-        <div class="w-full px-56 mb-5">
-          <img src="/line-step.svg" alt="" class="w-full" />
-        </div>
-      </div>
-      <div class="flex justify-between items-center text-center">
-        <div class="w-1/3">
-          <figure class="flex justify-center items-center">
-            <img src="/step-1-illustration.svg" alt="" class="h-30 mb-8" />
-          </figure>
-          <div class="step-content">
-            <h3 class="font-medium">Sign Up</h3>
-            <p class="font-light">
-              Sign Up account and start <br />
-            </p>
-          </div>
-        </div>
-        <div class="w-1/3">
-          <figure class="flex justify-center items-center -mt-24">
-            <img src="/step-2-illustration.svg" alt="" class="h-30 mb-8" />
-          </figure>
-          <div class="step-content">
-            <h3 class="font-medium">Create Your Idea</h3>
-            <p class="font-light">
-              Choose your plan <br />
-            </p>
-          </div>
-        </div>
-        <div class="w-1/3">
-          <figure class="flex justify-center items-center -mt-48">
-            <img src="/step-3-illustration.svg" alt="" class="h-30 mb-8" />
-          </figure>
-          <div class="step-content">
-            <h3 class="font-medium">Execute</h3>
-            <p class="font-light">
-              Time to makes dream <br />
-              Your Site live
-            </p>
-          </div>
-        </div>
-      </div>
-    --></section>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-4 w-full"
+      >
+        <div class="p-6 bg-white">
+          <p class="text-center">
+            <svg
+              class="inline text-green-400 w-12 h-12 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+            >
+              <g><rect fill="none" height="24" width="24" /></g>
+              <g>
+                <g />
+                <g>
+                  <circle cx="15.5" cy="9.5" r="1.5" />
+                  <circle cx="8.5" cy="9.5" r="1.5" />
+                  <path
+                    d="M12,18c2.28,0,4.22-1.66,5-4H7C7.78,16.34,9.72,18,12,18z"
+                  />
+                  <path
+                    d="M11.99,2C6.47,2,2,6.48,2,12c0,5.52,4.47,10,9.99,10C17.52,22,22,17.52,22,12C22,6.48,17.52,2,11.99,2z M12,20 c-4.42,0-8-3.58-8-8c0-4.42,3.58-8,8-8s8,3.58,8,8C20,16.42,16.42,20,12,20z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </p>
 
-    <section class="container mx-auto pt-24" id="projects">
+          <h2 class="font-semibold text-lg text-center text-gray-800 mt-2">
+            Raja Pesanan
+          </h2>
+
+          <p class="mt-2 text-gray-800 text-center">
+            Larissa Bakery berpengalaman menangani pesanan roti dalam jumlah besar (hingga 35.000 item sehari) sejak 2010. Berapapun jumlah pesanan Anda, Kami layani.
+          </p>
+        </div>
+        <div class="p-6 bg-white">
+          <p class="text-center">
+            <svg
+              class="inline text-blue-400 w-12 h-12 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <circle cx="15.5" cy="9.5" r="1.5" />
+              <circle cx="8.5" cy="9.5" r="1.5" />
+              <path
+                d="M12 16c-1.48 0-2.75-.81-3.45-2H6.88c.8 2.05 2.79 3.5 5.12 3.5s4.32-1.45 5.12-3.5h-1.67c-.7 1.19-1.97 2-3.45 2zm-.01-14C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+          </p>
+
+          <h2 class="font-semibold text-lg text-center text-gray-800 mt-2">
+            Fresh from Oven
+          </h2>
+
+          <p class="mt-2 text-gray-800 text-center">
+            Seluruh produk pesanan selalu dibuat paling lama 24 jam sebelum waktu pengambilan pesanan. Roti kami tahan 2-3 hari dari pembelian Anda di outlet Laritta.
+          </p>
+        </div>
+        <div class="p-6 bg-white">
+          <p class="text-center">
+            <svg
+              class="inline text-indigo-400 w-12 h-12 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M11.99 2C6.47 2 2 6.47 2 12s4.47 10 9.99 10S22 17.53 22 12 17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm1-10.06L14.06 11l1.06-1.06L16.18 11l1.06-1.06-2.12-2.12L13 9.94zm-4.12 0L9.94 11 11 9.94 8.88 7.82 6.76 9.94 7.82 11l1.06-1.06zM12 17.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"
+              />
+            </svg>
+          </p>
+
+          <h2 class="font-semibold text-lg text-center text-gray-800 mt-2">
+            Gratis Antar
+          </h2>
+
+          <p class="mt-2 text-gray-800 text-center">
+            Laritta Bakery menyediakan layanan antar pesanan dalam kota (Surabaya & Sidoarjo), hingga ke luar kota kota (Malang, Batu, Gresik, Pasuruan, Mojokerto, Bangkalan, Sampang, Pamekasan, dan kota lain di Jawa Timur).
+          </p>
+        </div>
+        <div class="p-6 bg-white">
+          <p class="text-center">
+            <svg
+              class="inline text-red-400 w-12 h-12 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 2.5c-2.33 0-4.31 1.46-5.11 3.5h10.22c-.8-2.04-2.78-3.5-5.11-3.5z"
+              />
+            </svg>
+          </p>
+
+          <h2 class="font-semibold text-lg text-center text-gray-800 mt-2">
+            Jaminan Kualitas
+          </h2>
+
+          <p class="mt-2 text-gray-800 text-center">Lara Bakery senantiasa menjaga kualitas produk dan layanan untuk pelanggan setia kami. Kami memberi garansi uang kembali hingga 100% jika Anda tidak puas dengan produk atau layanan kami.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto pt-24 px-6" id="projects">
       <div class="flex justify-between items-center">
         <div class="w-auto">
-          <h2 class="text-3xl text-gray-900 mb-8">
-            New projects you can <br />
-            taken care of
-          </h2>
+          <h2 class="text-3xl text-gray-900 mb-8">Our Products</h2>
         </div>
         <div class="w-auto mt-5">
           <a class="text-gray-900 hover:underline text-md font-medium" href=""
@@ -126,6 +189,12 @@
             <div>
               <button
                 class="text-white text-md font-semibold bg-pink-600 py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+                @click="
+                  $router.push({
+                    name: 'products-id',
+                    params: { id: product.id },
+                  })
+                "
               >
                 Buy Now
               </button>
@@ -204,11 +273,11 @@ export default {
   right: 0;
   left: 0;
   width: 100%;
-  height: 640px;
+  height: 600px;
   background-image: url('/auth-background.svg');
-  background-position: top right;
+  background-position: top left;
   background-repeat: no-repeat;
-  background-color: #f11574;
+  background-color: #ee3123;
   transform: skewY(-6deg);
   transform-origin: top left;
 }
