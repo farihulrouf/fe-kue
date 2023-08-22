@@ -44,8 +44,7 @@
       <div class="flex justify-between items-center mb-10">
         <div class="w-auto">
           <h2 class="text-3xl text-gray-900 mb-8">
-            Only 3 steps to execute <br />
-            your bright ideas
+           
           </h2>
         </div>
       </div>
@@ -82,7 +81,9 @@
           </h2>
 
           <p class="mt-2 text-gray-800 text-center">
-            Larissa Bakery berpengalaman menangani pesanan roti dalam jumlah besar (hingga 35.000 item sehari) sejak 2010. Berapapun jumlah pesanan Anda, Kami layani.
+            Larissa Bakery berpengalaman menangani pesanan roti dalam jumlah
+            besar (hingga 35.000 item sehari) sejak 2010. Berapapun jumlah
+            pesanan Anda, Kami layani.
           </p>
         </div>
         <div class="p-6 bg-white">
@@ -107,7 +108,9 @@
           </h2>
 
           <p class="mt-2 text-gray-800 text-center">
-            Seluruh produk pesanan selalu dibuat paling lama 24 jam sebelum waktu pengambilan pesanan. Roti kami tahan 2-3 hari dari pembelian Anda di outlet Laritta.
+            Seluruh produk pesanan selalu dibuat paling lama 24 jam sebelum
+            waktu pengambilan pesanan. Roti kami tahan 2-3 hari dari pembelian
+            Anda di outlet Laritta.
           </p>
         </div>
         <div class="p-6 bg-white">
@@ -130,7 +133,10 @@
           </h2>
 
           <p class="mt-2 text-gray-800 text-center">
-            Laritta Bakery menyediakan layanan antar pesanan dalam kota (Surabaya & Sidoarjo), hingga ke luar kota kota (Malang, Batu, Gresik, Pasuruan, Mojokerto, Bangkalan, Sampang, Pamekasan, dan kota lain di Jawa Timur).
+            Laritta Bakery menyediakan layanan antar pesanan dalam kota
+            (Surabaya & Sidoarjo), hingga ke luar kota kota (Malang, Batu,
+            Gresik, Pasuruan, Mojokerto, Bangkalan, Sampang, Pamekasan, dan kota
+            lain di Jawa Timur).
           </p>
         </div>
         <div class="p-6 bg-white">
@@ -152,7 +158,10 @@
             Jaminan Kualitas
           </h2>
 
-          <p class="mt-2 text-gray-800 text-center">Lara Bakery senantiasa menjaga kualitas produk dan layanan untuk pelanggan setia kami. Kami memberi garansi uang kembali hingga 100% jika Anda tidak puas dengan produk atau layanan kami.
+          <p class="mt-2 text-gray-800 text-center">
+            Lara Bakery senantiasa menjaga kualitas produk dan layanan untuk
+            pelanggan setia kami. Kami memberi garansi uang kembali hingga 100%
+            jika Anda tidak puas dengan produk atau layanan kami.
           </p>
         </div>
       </div>
@@ -205,48 +214,128 @@
     </section>
 
     <section class="container mx-auto pt-24 px-8" id="testimonials">
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center mb-10">
         <div class="w-auto">
           <h2 class="text-3xl text-gray-900 mb-8">
-            See What Our <br />
-            Happy Clients Say
+            Apa yang di katakan <br />
+            Customer kami
           </h2>
         </div>
       </div>
-      <div class="flex mb-10">
-        <div class="w-2/12 flex justify-center items-start">
-          <img src="/testimonial-line.svg" alt="" />
-        </div>
-        <div class="w-8/12 mt-16">
-          <h2 class="text-3xl text-gray-900 font-light">
-            “Man, you guys are awesome. Thanks for the prompt service. <br />
-            I can see that I made the right choice in webhosts..”
-          </h2>
-          <div class="testimonial-info mt-8">
-            <div class="name text-xl font-semibold">Shopie Nicole</div>
-            <div class="title text-xl font-light text-gray-400">
-              Project Manager
+      <div
+        class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2"
+      >
+        <figure
+          class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+        >
+          <blockquote
+            class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Very easy this was to integrate
+            </h3>
+            <p class="my-4">
+              If you care for your time, I hands down would go with this."
+            </p>
+          </blockquote>
+          <figcaption class="flex items-center justify-center space-x-3">
+            <img
+              class="rounded-full w-9 h-9"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+              alt="profile picture"
+            />
+            <div class="space-y-0.5 font-medium dark:text-white text-left">
+              <div>Bonnie Green</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">
+                Developer at Open AI
+              </div>
             </div>
-          </div>
-          <div class="testimonial-icon mt-10">
+          </figcaption>
+        </figure>
+        <figure
+          class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700"
+        >
+          <blockquote
+            class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Solid foundation for any project
+            </h3>
+            <p class="my-4">
+              Designing with Figma components that can be easily translated to
+              the utility classes of Tailwind CSS is a huge timesaver!"
+            </p>
+          </blockquote>
+          <figcaption class="flex items-center justify-center space-x-3">
             <img
-              src="/testimonial-1-icon.png"
-              alt=""
-              class="w-20 mr-5 inline-block testimonial-user rounded-full"
+              class="rounded-full w-9 h-9"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+              alt="profile picture"
             />
+            <div class="space-y-0.5 font-medium dark:text-white text-left">
+              <div>Roberta Casas</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">
+                Lead designer at Dropbox
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+        <figure
+          class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-bl-lg md:border-b-0 md:border-r dark:bg-gray-800 dark:border-gray-700"
+        >
+          <blockquote
+            class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Mindblowing workflow
+            </h3>
+            <p class="my-4">
+              Aesthetically, the well designed components are beautiful and will
+              undoubtedly level up your next application."
+            </p>
+          </blockquote>
+          <figcaption class="flex items-center justify-center space-x-3">
             <img
-              src="/testimonial-2-icon.png"
-              alt=""
-              class="w-20 mr-5 inline-block testimonial-user rounded-full"
+              class="rounded-full w-9 h-9"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+              alt="profile picture"
             />
+            <div class="space-y-0.5 font-medium dark:text-white text-left">
+              <div>Jese Leos</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">
+                Software Engineer at Facebook
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+        <figure
+          class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-br-lg dark:bg-gray-800 dark:border-gray-700"
+        >
+          <blockquote
+            class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
+          >
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              Efficient Collaborating
+            </h3>
+            <p class="my-4">
+              You have many examples that can be used to create a fast prototype
+              for your team."
+            </p>
+          </blockquote>
+          <figcaption class="flex items-center justify-center space-x-3">
             <img
-              src="/testimonial-3-icon.png"
-              alt=""
-              class="w-20 mr-5 inline-block testimonial-user active rounded-full"
+              class="rounded-full w-9 h-9"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+              alt="profile picture"
             />
-          </div>
-        </div>
-        <div class="w-2/12"></div>
+            <div class="space-y-0.5 font-medium dark:text-white text-left">
+              <div>Joseph McFall</div>
+              <div class="text-sm text-gray-500 dark:text-gray-400">
+                CTO at Google
+              </div>
+            </div>
+          </figcaption>
+        </figure>
       </div>
     </section>
     <div class="cta-clip -mt-20"></div>
