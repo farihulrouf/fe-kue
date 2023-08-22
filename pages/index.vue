@@ -51,7 +51,7 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-4 w-full"
       >
-        <div class="p-6 bg-white">
+        <div class="p-6 bg-white border">
           <p class="text-center">
             <svg
               class="inline text-green-400 w-12 h-12 fill-current"
@@ -86,7 +86,7 @@
             pesanan Anda, Kami layani.
           </p>
         </div>
-        <div class="p-6 bg-white">
+        <div class="p-6 bg-white border">
           <p class="text-center">
             <svg
               class="inline text-blue-400 w-12 h-12 fill-current"
@@ -113,7 +113,7 @@
             Anda di outlet Laritta.
           </p>
         </div>
-        <div class="p-6 bg-white">
+        <div class="p-6 bg-white border">
           <p class="text-center">
             <svg
               class="inline text-indigo-400 w-12 h-12 fill-current"
@@ -139,7 +139,7 @@
             lain di Jawa Timur).
           </p>
         </div>
-        <div class="p-6 bg-white">
+        <div class="p-6 bg-white border">
           <p class="text-center">
             <svg
               class="inline text-red-400 w-12 h-12 fill-current"
