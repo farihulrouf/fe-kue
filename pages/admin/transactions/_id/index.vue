@@ -1,6 +1,6 @@
 <template>
     <div class="product-page">
-      <section class="dashboard-header pt-5">
+      <section class="dashboard-header pt-5 px-6">
         <div class="container mx-auto relative">
           <Nav />
         </div>

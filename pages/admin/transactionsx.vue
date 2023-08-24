@@ -55,7 +55,7 @@
         </div>
       </section>
       <div class="cta-clip -mt-20"></div>
-      <section class="call-to-action bg-purple-progress pt-64 pb-10"></section>
+      <section class="call-to-action bg-teal-600 pt-64 pb-10"></section>
       <Footer />
     </div>
   </template>

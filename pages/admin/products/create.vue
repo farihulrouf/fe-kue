@@ -1,11 +1,11 @@
 <template>
     <div class="project-page">
-      <section class="dashboard-header pt-5">
+      <section class="dashboard-header pt-5 px-6">
         <div class="container mx-auto relative">
           <Nav />
         </div>
       </section>
-      <section class="container mx-auto pt-8">
+      <section class="container mx-auto pt-8 px-6">
         <div class="flex justify-between items-center">
           <div class="w-full mr-6">
             <h2 class="text-4xl text-gray-900 mb-2 font-medium">Dashboard</h2>
@@ -13,7 +13,7 @@
         </div>
         <div class="flex justify-between items-center">
           <div class="w-3/4 mr-6">
-            <h3 class="text-2xl text-gray-900 mb-4">Create New Projects</h3>
+            <h3 class="text-2xl text-gray-900 mb-4">Tambahkan Product</h3>
           </div>
           <div class="w-1/4 text-right">
             <button
@@ -35,7 +35,7 @@
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     >
-                      Product Name
+                    Nama Product
                     </label>
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -48,7 +48,7 @@
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     >
-                      Price
+                      Harga
                     </label>
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -61,7 +61,7 @@
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     >
-                      Discount 
+                      Diskon  
                     </label>
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -75,7 +75,7 @@
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     >
-                      Discount Two
+                     Diskon Ke dua
                     </label>
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -89,8 +89,8 @@
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 mt-3"
                     >
-                      Short Description
-                    </label>
+                    Deskripsi Singkat
+                  </label>
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="text"
@@ -115,12 +115,12 @@
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     >
-                      Description
+                      Deskripsi
                     </label>
                     <textarea
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="text"
-                      placeholder="description your products"
+                      placeholder="Deskripsi product"
                       v-model="product.description"
                     ></textarea>
                   </div>
@@ -131,7 +131,7 @@
         </div>
       </section>
       <div class="cta-clip -mt-20"></div>
-      <section class="call-to-action bg-purple-progress pt-64 pb-10"></section>
+      <section class="call-to-action bg-teal-600 pt-64 pb-10"></section>
       <Footer />
     </div>
   </template>
@@ -175,7 +175,7 @@
     background-image: url('/auth-background.svg');
     background-position: top right;
     background-repeat: no-repeat;
-    background-color: #3b41e3;
+    background-color: #ee3123;
     background-size: 250px;
     height: 100px;
   }

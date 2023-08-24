@@ -76,7 +76,7 @@
       </div>
     </section>
     <div class="cta-clip -mt-20"></div>
-    <section class="call-to-action bg-purple-progress pt-64 pb-10"></section>
+    <section class="call-to-action bg-teal-600 pt-64 pb-10"></section>
     <Footer />
   </div>
 </template>
@@ -109,7 +109,7 @@ export default {
   background-image: url('/auth-background.svg');
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: #3b41e3;
+  background-color: #ee3123;
   background-size: 250px;
   height: 100px;
 }
