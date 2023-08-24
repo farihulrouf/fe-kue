@@ -8,20 +8,28 @@
     <section class="container project-container mx-auto -mt-56 px-6">
       <div class="flex mt-3">
         <div class="w-3/4 mr-6">
-          <div class="bg-white p-3 mb-3 rounded-20">
+          <div class="bg-white p-3 mb-3 rounded-20 relative">
             <figure class="item-image">
               <img
                 :src="default_image"
                 alt=""
-                class="rounded-20 w-full h-[600px]"
+                class="rounded-20 w-full h-[500px]"
               />
             </figure>
+            <h4 class="absolute left-14 top-10 z-10 text-semibold text-white">
+                Disc
+             </h4>
+            <div class="absolute left-8 top-10 bg-teal-500 rounded-full w-20 h-20 flex justify-center items-center">
+              <h3 class="text-3xl text-semibold text-white">
+                {{ product.data.discount }}%
+              </h3>
+            </div>
           </div>
           <div class="flex -mx-2">
             <div
               v-for="image in product.data.images"
               :key="image.image_url"
-              class="relative w-1/4 bg-white m-2 p-2 rounded-20"
+              class="relative w-32 bg-white m-2 p-2 rounded-20"
             >
               <figure class="item-thumbnail cursor-pointer">
                 <img
@@ -174,7 +182,7 @@
                 </a>
               </span>
             </div>
-            <h2 class="mt-8 text-xl font-semibold">What will you get:</h2>
+            <h2 class="mt-8 text-xl font-semibold">Cara Penyimpanan</h2>
             <ul class="list-check mt-3">
               <li v-for="perk in product.data.perks" :key="perk">
                 {{ perk }}
@@ -196,7 +204,7 @@
                 @click="fund"
                 class="mt-3 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-medium px-6 py-3 text-md rounded-full"
               >
-                Beli sekarang
+                Beli
               </button>
             </template>
             <template v-else>
@@ -217,11 +225,11 @@
           <h2 class="text-4xl text-gray-900 mb-2 font-medium">
             {{ product.data.name }}
           </h2>
-          <p class="font-light text-xl mb-5">
+          <p class="font-light text-md mb-5">
             {{ product.data.short_description }}
           </p>
 
-          <p class="font-light text-xl mb-5">
+          <p class="font-light text-md mb-5">
             {{ product.data.description }}
           </p>
         </div>
