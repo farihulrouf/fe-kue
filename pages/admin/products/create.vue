@@ -102,12 +102,12 @@
                     <label
                       class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                     >
-                      What Fetures Hosting
+                    CARA PENYIMPANAN
                     </label>
                     <input
                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       type="text"
-                      placeholder="Example: Free Domain .com, 30Gb SSD , Unlimited websites"
+                      placeholder="Maks 3 hari, Lemari es , Suhu freezer"
                       v-model="product.perks"
                     />
                   </div>
