@@ -39,7 +39,16 @@
           v-for="product in products.data"
           :key="product.id"
         >
-         
+        <div
+            class="border h-48 lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+            :style="
+              'background-color: #bbb; background-position: center; background-image: url(\'' +
+              $axios.defaults.baseURL +
+              '/' +
+              product.image_url +
+              '\')'
+            "
+          ></div>
           <nuxt-link
             :to="'/admin/products/' + product.id"
             class="w-full border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-8 flex justify-between leading-normal"

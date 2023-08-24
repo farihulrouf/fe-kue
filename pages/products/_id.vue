@@ -1,16 +1,20 @@
 <template>
   <div class="project-page">
-    <section class="project-header pt-5">
+    <section class="project-header pt-5 px-6">
       <div class="container mx-auto relative">
         <Nav />
       </div>
     </section>
-    <section class="container project-container mx-auto -mt-56">
+    <section class="container project-container mx-auto -mt-56 px-6">
       <div class="flex mt-3">
         <div class="w-3/4 mr-6">
           <div class="bg-white p-3 mb-3 rounded-20">
             <figure class="item-image">
-              <img :src="default_image" alt="" class="rounded-20 w-full h-[600px]" />
+              <img
+                :src="default_image"
+                alt=""
+                class="rounded-20 w-full h-[600px]"
+              />
             </figure>
           </div>
           <div class="flex -mx-2">
@@ -33,11 +37,8 @@
           </div>
         </div>
         <div class="w-1/4">
-          <div
-            class="bg-white w-full p-5 rounded-20 sticky"
-            style="top: 15px;"
-          >
-            <h3>Project Leader:</h3>
+          <div class="bg-white w-full p-5 rounded-20 sticky" style="top: 15px">
+            <h3>Penjual:</h3>
 
             <div class="flex mt-3">
               <div class="w-1/4">
@@ -54,21 +55,138 @@
                   {{ product.data.user.name }}
                 </div>
                 <div class="font-light text-md text-gray-400">
-                  {{ product.data.backer_count }} backer
+                  {{ product.data.backer_count }} Terjual
                 </div>
               </div>
             </div>
 
-            <h4 class="mt-5 font-semibold">What will you get:</h4>
+            <div class="flex mb-4">
+              <span class="flex items-center">
+                <svg
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 text-red-500"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 text-red-500"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 text-red-500"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 text-red-500"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 text-red-500"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  ></path>
+                </svg>
+                <span class="text-gray-600 ml-3">4 Reviews</span>
+              </span>
+              <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200">
+                <a class="text-gray-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-500">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                    ></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+            <h2 class="mt-8 text-xl font-semibold">What will you get:</h2>
             <ul class="list-check mt-3">
               <li v-for="perk in product.data.perks" :key="perk">
                 {{ perk }}
               </li>
             </ul>
+            <h4 class="text-3xl mt-2">
+              Rp {{ product.data.price.toLocaleString() }}
+            </h4>
             <template v-if="this.$store.state.auth.loggedIn">
               <input
                 type="number"
-                class=" block w-full px-6 py-3 mt-4 rounded-full text-gray-800 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline"
+                class="block w-full px-6 py-3 mt-4 rounded-full text-gray-800 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline"
                 placeholder="Amount in Rp"
                 value="0"
                 v-model.number="transaction.amount"
@@ -78,7 +196,7 @@
                 @click="fund"
                 class="mt-3 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-medium px-6 py-3 text-md rounded-full"
               >
-                Fund Now
+                Beli sekarang
               </button>
             </template>
             <template v-else>
@@ -93,7 +211,7 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto pt-8">
+    <section class="container mx-auto pt-8 px-6">
       <div class="flex justify-between items-center">
         <div class="w-full md:w-3/4 mr-6">
           <h2 class="text-4xl text-gray-900 mb-2 font-medium">
@@ -103,8 +221,6 @@
             {{ product.data.short_description }}
           </p>
 
-         
-       
           <p class="font-light text-xl mb-5">
             {{ product.data.description }}
           </p>

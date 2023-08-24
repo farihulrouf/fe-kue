@@ -192,12 +192,12 @@
 
           <div class="flex justify-between items-center">
             <div>
-              <h1 class="mt-5 text-2xl font-semibold">{{ product.name }}</h1>
+              <h1 class="mt-5 text-xl font-semibold">{{ product.name }}</h1>
               <p class="mt-2">Rp {{ product.price.toLocaleString() }}</p>
             </div>
             <div>
               <button
-                class="text-white text-md font-semibold bg-pink-600 py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+                class="text-white text-md font-semibold bg-[#ee3123] py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
                 @click="
                   $router.push({
                     name: 'products-id',
