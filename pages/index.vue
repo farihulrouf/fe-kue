@@ -232,10 +232,10 @@
             class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
           >
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              Very easy this was to integrate
+              Terbaik terbaik dan jusy
             </h3>
             <p class="my-4">
-              If you care for your time, I hands down would go with this."
+             Pelayanan yang cepat ddan rasanya nikmat."
             </p>
           </blockquote>
           <figcaption class="flex items-center justify-center space-x-3">
@@ -247,7 +247,7 @@
             <div class="space-y-0.5 font-medium dark:text-white text-left">
               <div>Bonnie Green</div>
               <div class="text-sm text-gray-500 dark:text-gray-400">
-                Developer at Open AI
+                 CEF 
               </div>
             </div>
           </figcaption>
@@ -259,11 +259,10 @@
             class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
           >
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              Solid foundation for any project
+              Murah dan enak 
             </h3>
             <p class="my-4">
-              Designing with Figma components that can be easily translated to
-              the utility classes of Tailwind CSS is a huge timesaver!"
+             Pelayanan ramah , kue nya enak dan tentu cepat service
             </p>
           </blockquote>
           <figcaption class="flex items-center justify-center space-x-3">
@@ -275,7 +274,7 @@
             <div class="space-y-0.5 font-medium dark:text-white text-left">
               <div>Roberta Casas</div>
               <div class="text-sm text-gray-500 dark:text-gray-400">
-                Lead designer at Dropbox
+                CEF
               </div>
             </div>
           </figcaption>
@@ -287,11 +286,10 @@
             class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
           >
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              Mindblowing workflow
+              Kenikmatan yang belum tertandingi
             </h3>
             <p class="my-4">
-              Aesthetically, the well designed components are beautiful and will
-              undoubtedly level up your next application."
+              pelyanan yang cepat, ramah dan tentunya produknya sangat bagus ."
             </p>
           </blockquote>
           <figcaption class="flex items-center justify-center space-x-3">
@@ -303,7 +301,7 @@
             <div class="space-y-0.5 font-medium dark:text-white text-left">
               <div>Jese Leos</div>
               <div class="text-sm text-gray-500 dark:text-gray-400">
-                Software Engineer at Facebook
+                Manager marketing
               </div>
             </div>
           </figcaption>
@@ -315,11 +313,10 @@
             class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400"
           >
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              Efficient Collaborating
+              Jusy, murah dan enak pelyanan bagus
             </h3>
             <p class="my-4">
-              You have many examples that can be used to create a fast prototype
-              for your team."
+             Tidak di ragukan dan sangat recomended untuk yang punya acara
             </p>
           </blockquote>
           <figcaption class="flex items-center justify-center space-x-3">
