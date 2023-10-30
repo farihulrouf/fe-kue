@@ -60,9 +60,10 @@
 
                   <div class="text-sm leading-4 font-normal">
                     <span class="text-xs leading-4 font-normal text-gray-500">
-                      Description</span
+                      Alamat</span
                     >
-                    {{ transaction.product.description }}
+                    {{ transaction.address }}
+                   
                   </div>
                 </div>
               </div>

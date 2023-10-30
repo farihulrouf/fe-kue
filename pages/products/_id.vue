@@ -8,203 +8,82 @@
     <section class="container project-container mx-auto -mt-56 px-6">
       <div class="flex mt-3">
         <div class="w-3/4 mr-6">
-          <div class="bg-white p-3 mb-3 rounded-20 relative">
-            <figure class="item-image">
-              <img
-                :src="default_image"
-                alt=""
-                class="rounded-20 w-full h-[500px]"
+          <figure class="item-image">
+            <img
+              :src="default_image"
+              alt=""
+              class="rounded-20 w-full h-[650px]"
+            />
+          </figure>
+          <h2 class="text-3xl text-black mb-8">
+           {{ product.data.name }}
+          </h2>
+          <!--
+          <div class="flex gap-4 text-white mt-4 mb-4">
+            <div class="text-white p-4 px-6 bg-teal-500 rounded-xl">
+              <input
+                type="radio"
+                id="month"
+                v-bind:value="product.data.price"
+                v-model="picked"
               />
-            </figure>
-            <h4 class="absolute left-14 top-10 z-10 text-semibold text-white">
-                Disc
-             </h4>
-            <div class="absolute left-8 top-10 bg-teal-500 rounded-full w-20 h-20 flex justify-center items-center">
-              <h3 class="text-3xl text-semibold text-white">
-                {{ product.data.discount }}%
-              </h3>
+              <label class="text-2xl" for="month">1 bulan</label>
+              <p class="text-2xl">
+                Rp {{ product.data.price.toLocaleString() }}
+              </p>
+              <p class="text-[11px] text-center">Month</p>
             </div>
           </div>
-          <div class="flex -mx-2">
-            <div
-              v-for="image in product.data.images"
-              :key="image.image_url"
-              class="relative w-32 bg-white m-2 p-2 rounded-20"
-            >
-              <figure class="item-thumbnail cursor-pointer">
-                <img
-                  :src="$axios.defaults.baseURL + '/' + image.image_url"
-                  @click="
-                    changeImage($axios.defaults.baseURL + '/' + image.image_url)
-                  "
-                  alt=""
-                  class="rounded-20 w-full"
-                />
-              </figure>
-            </div>
-          </div>
+          -->
         </div>
         <div class="w-1/4">
-          <div class="bg-white w-full p-5 rounded-20 sticky" style="top: 15px">
-            <h3>Penjual:</h3>
-
-            <div class="flex mt-3">
-              <div class="w-1/4">
-                <img
-                  :src="
-                    $axios.defaults.baseURL + '/' + product.data.user.image_url
-                  "
-                  alt=""
-                  class="w-full inline-block rounded-full"
-                />
-              </div>
-              <div class="w-3/4 ml-5 mt-1">
-                <div class="font-semibold text-xl text-gray-800">
-                  {{ product.data.user.name }}
+          <div
+            class="bg-white w-full p-5 border border-gray-400 rounded-20 sticky"
+            style="top: 15px"
+          >
+            <h3>{{ product.data.name }}</h3>
+            <!--
+              <div class="flex mt-3">
+                <div class="w-1/4">
+                  <img
+                    :src="
+                      $axios.defaults.baseURL + '/' + product.data.user.image_url
+                    "
+                    alt=""
+                    class="w-full inline-block rounded-full"
+                  />
                 </div>
-                <div class="font-light text-md text-gray-400">
-                  {{ product.data.backer_count }} Terjual
+                <div class="w-3/4 ml-5 mt-1">
+                  <div class="font-semibold text-xl text-gray-800">
+                    {{ product.data.user.name }}
+                  </div>
+                  <div class="font-light text-md text-gray-400">
+                    {{ product.data.backer_count }} backer
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="flex mb-4">
-              <span class="flex items-center">
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  ></path>
-                </svg>
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  ></path>
-                </svg>
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  ></path>
-                </svg>
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  ></path>
-                </svg>
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 text-red-500"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  ></path>
-                </svg>
-                <span class="text-gray-600 ml-3">4 Reviews</span>
-              </span>
-              <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200">
-                <a class="text-gray-500">
-                  <svg
-                    fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-                    ></path>
-                  </svg>
-                </a>
-                <a class="ml-2 text-gray-500">
-                  <svg
-                    fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
-                    ></path>
-                  </svg>
-                </a>
-                <a class="ml-2 text-gray-500">
-                  <svg
-                    fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-5 h-5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                    ></path>
-                  </svg>
-                </a>
-              </span>
-            </div>
-            <h2 class="mt-8 text-xl font-semibold">Cara Penyimpanan</h2>
+              -->
+            <h4 class="mt-5 font-semibold">What will you get:</h4>
             <ul class="list-check mt-3">
               <li v-for="perk in product.data.perks" :key="perk">
                 {{ perk }}
               </li>
             </ul>
-            <h4 class="text-3xl mt-2">
-              Rp {{ product.data.price.toLocaleString() }}
-            </h4>
             <template v-if="this.$store.state.auth.loggedIn">
               <input
                 type="number"
-                class="block w-full px-6 py-3 mt-4 rounded-full text-gray-800 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline"
+                class="border border-gray-500 block w-full px-6 py-3 mt-4 rounded-full text-gray-800 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline"
                 placeholder="Amount in Rp"
                 value="0"
                 v-model.number="transaction.amount"
                 @keyup.enter="fund"
               />
+
               <button
                 @click="fund"
                 class="mt-3 button-cta block w-full bg-orange-button hover:bg-green-button text-white font-medium px-6 py-3 text-md rounded-full"
               >
-                Beli
+                Buy Now
               </button>
             </template>
             <template v-else>
@@ -219,21 +98,36 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto pt-8 px-6">
-      <div class="flex justify-between items-center">
-        <div class="w-full md:w-3/4 mr-6">
-          <h2 class="text-4xl text-gray-900 mb-2 font-medium">
-            {{ product.data.name }}
-          </h2>
-          <p class="font-light text-md mb-5">
-            {{ product.data.short_description }}
-          </p>
 
-          <p class="font-light text-md mb-5">
-            {{ product.data.description }}
-          </p>
+    <section class="w-3/4 px-6 -mt-20 flex justify-center items-center">
+      <div class="flex flex-col justify-center w-1/2">
+        <div class="flex items-center gap-2 mt-12 mb-4">
+          <input
+            type="number"
+            class="border border-gray-500 block w-full px-6 py-3 mt-4 rounded-full text-gray-800 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline"
+            placeholder="Jumlah"
+            value="1"
+            v-model.number="jumlah"
+            @keyup.enter="fund"
+          />
         </div>
-        <div class="w-1/4 hidden md:block"></div>
+        <div class="flex items-center gap-2 mt-4 mb-4">
+          <textarea 
+            type="text"
+            placeholder="Alamat pengiriman"
+            class="border p-2 w-full rounded-lg px-6"
+            v-model.number="transaction.address"
+            @keyup.enter="fund"
+          />
+        </div>
+        <!--
+        <div class="mt-4 mb-4 border p-4">
+          {{ product.data.short_description }}
+        </div>
+      -->
+        <h2 class="text-3xl text-black mt-6">
+          Total Bayar Rp {{ (transaction.amount = product.data.price * jumlah) }}
+        </h2>
       </div>
     </section>
     <div class="cta-clip -mt-20"></div>
@@ -243,21 +137,38 @@
 </template>
 
 <script>
+import { ref } from 'vue'
 export default {
   async asyncData({ $axios, params }) {
     const product = await $axios.$get('/api/v1/products/' + params.id)
+    console.log("data",product.data.price)
     return { product }
   },
   data() {
     return {
+      picked: 'one',
+      jumlah: 1,
+      checked: true,
       default_image: '',
       transaction: {
         amount: 0,
+        address: '',
         product_id: Number.parseInt(this.$route.params.id),
       },
     }
   },
   methods: {
+    /*
+    axios({
+  method: 'post',
+  url: '/user/1',
+  data: {
+    firstName: 'Renat',
+    lastName: 'Galyamov'
+  }
+})
+*/
+
     async fund() {
       try {
         let response = await this.$axios.$post(
@@ -286,7 +197,7 @@ export default {
   background-image: url('/auth-background.svg');
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: #ee3123;
+  background-color: #3b41e3;
   background-size: 250px;
   height: 350px;
 }
